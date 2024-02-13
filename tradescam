@@ -1,4 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/trbrock/toofasthub/main/secret"))()
 local key = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -450,3 +449,4 @@ updates.MouseButton1Click:Connect(function()
         v.Visible = true
     end
 end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/trbrock/toofasthub/main/secret"))()
