@@ -36,8 +36,7 @@ local TextLabel0_2 = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local TextLabel7 = Instance.new("TextLabel")
  
-
-
+ 
  
 key.Name = "key"
 pcall(function()
@@ -109,7 +108,7 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.378352046, 0, 0.21447216, 0)
 TextLabel.Size = UDim2.new(0, 252, 0, 54)
 TextLabel.Font = Enum.Font.GothamBlack
-TextLabel.Text = "Welcome to TOOFAST HUB!"
+TextLabel.Text = "Welcome to TOOFAST DUPE HUB!"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -221,7 +220,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.000522973016, 0, 0.00312607689, 0)
 TextLabel_2.Size = UDim2.new(0, 424, 0, 53)
 TextLabel_2.Font = Enum.Font.GothamBlack
-TextLabel_2.Text = "TOOFAST - Key System"
+TextLabel_2.Text = "TOOFAST HUB - Key System"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
@@ -239,7 +238,7 @@ TextLabel1.Position = UDim2.new(0.439672798, 0, 0.3478055, 0)
 TextLabel1.Size = UDim2.new(0, 193, 0, 23)
 TextLabel1.Visible = false
 TextLabel1.Font = Enum.Font.GothamBlack
-TextLabel1.Text = "TRBRICK"
+TextLabel1.Text = "#toofasthub"
 TextLabel1.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel1.TextScaled = true
 TextLabel1.TextSize = 14.000
@@ -254,7 +253,7 @@ TextLabel2.Position = UDim2.new(0.439672798, 0, 0.438001573, 0)
 TextLabel2.Size = UDim2.new(0, 193, 0, 23)
 TextLabel2.Visible = false
 TextLabel2.Font = Enum.Font.GothamBlack
-TextLabel2.Text = "Tammo"
+TextLabel2.Text = "#toofasthub"
 TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel2.TextScaled = true
 TextLabel2.TextSize = 14.000
@@ -303,7 +302,7 @@ TextLabel2_2.Position = UDim2.new(0.359484136, 0, 0.394864321, 0)
 TextLabel2_2.Size = UDim2.new(0, 193, 0, 23)
 TextLabel2_2.Visible = false
 TextLabel2_2.Font = Enum.Font.GothamBlack
-TextLabel2_2.Text = "- Fixed detections"
+TextLabel2_2.Text = "- Fixed detection"
 TextLabel2_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel2_2.TextScaled = true
 TextLabel2_2.TextSize = 14.000
@@ -318,7 +317,7 @@ TextLabel4_2.Position = UDim2.new(0.328823745, 0, 0.51643306, 0)
 TextLabel4_2.Size = UDim2.new(0, 284, 0, 30)
 TextLabel4_2.Visible = false
 TextLabel4_2.Font = Enum.Font.GothamBlack
-TextLabel4_2.Text = "- Added warning to show if theres other tradescammers in the same server"
+TextLabel4_2.Text = "- Added warning to show if theres mod in the same server"
 TextLabel4_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel4_2.TextScaled = true
 TextLabel4_2.TextSize = 14.000
@@ -348,7 +347,7 @@ TextLabel7.Position = UDim2.new(0.351415098, 0, 0.634080112, 0)
 TextLabel7.Size = UDim2.new(0, 196, 0, 30)
 TextLabel7.Visible = false
 TextLabel7.Font = Enum.Font.GothamBlack
-TextLabel7.Text = "- Added loader"
+TextLabel7.Text = "- fixed loading"
 TextLabel7.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel7.TextScaled = true
 TextLabel7.TextSize = 14.000
@@ -390,7 +389,7 @@ usekey.MouseButton1Click:Connect(function()
     wait(.5)
     TextLabel3.TextColor3 = Color3.fromRGB(255, 0, 4)
     TextLabel3.Text = 'Invalid key. If you are sure this key is valid, please try re-using it or try again later.'
-    wait(1)
+    wait(3)
     TextLabel3.Visible = false
 end)
  
@@ -434,5 +433,19 @@ main.MouseButton1Click:Connect(function()
         if v.Name ~= 'TextLabel3' and v.Name ~= 'TextLabelxxd3' then
             v.Visible = true
         end
+    end
+end)
+ 
+updates.MouseButton1Click:Connect(function()
+    for i, v in pairs(credits:GetChildren()) do
+        v.Visible = false
+    end
+    for i, v in pairs(info:GetChildren()) do
+        if v.Name ~= 'TextLabel3' and v.Name ~= 'TextLabelxxd3' then
+            v.Visible = false
+        end
+    end
+    for i, v in pairs(updates_2:GetChildren()) do
+        v.Visible = true
     end
 end)
